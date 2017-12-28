@@ -20,32 +20,35 @@ body {
 nav {
     padding: 5px;
     background-color: #E0E0E0;
+    height: 50px;
+    width: 360px;
 }
 
-img.navbar {
+.navbar {
+  background-image: url(images/BlackStatusBar.png);
+  background-position: center;
+  display: block;
+}
+
+.busmap {
+  background-image: url(images/BusMap2b.png);
+  background-position: center;
   display: block;
 }
 
 div.arrow-left {
     color: black;
-    font-size: 0.8em;
     margin: 0px;
-    padding-top: 12px;
-    padding-right: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
-    height: 30px;
-    width: 20px;
-}
-
-class.fa fa-chevron-left fa-inverse fa-2x {
-  color: black;
+    padding-top: 5px;
+    padding-left: 10px;
+    height: 0px;
+    width: 0px;
 }
 
 h1 {
   font-size: 20px;
   margin: 0px;
-  padding: 0px;
+  padding: 5px;
   text-align: center;
 
 
