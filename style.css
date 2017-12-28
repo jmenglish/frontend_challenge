@@ -1,0 +1,61 @@
+/*box-sizing to border-box change*/
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+
+body {
+    background-color: #0000;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 360px;
+    height: 640px;
+    background-color: #F5F5F5;
+}
+/*NavBar Content*/
+nav {
+    padding: 5px;
+    background-color: #E0E0E0;
+}
+
+img.navbar {
+  display: block;
+}
+
+div.arrow-left {
+    color: black;
+    font-size: 0.8em;
+    margin: 0px;
+    padding-top: 12px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    height: 30px;
+    width: 20px;
+}
+
+class.fa fa-chevron-left fa-inverse fa-2x {
+  color: black;
+}
+
+h1 {
+  font-size: 20px;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+
+
+
+
+}
+
+/*BusMap Image*/
+img.busmap {
+  display: block;
+}
+
+/*BusRoute List*/
