@@ -2,21 +2,26 @@
 *, *:before, *:after {
   box-sizing: border-box;
 }
-
-
+/*website body*/
 body {
-    background-color: #0000;
+    background-color: black;
     font-family: sans-serif;
     font-size: 16px;
+    color: black;
+    width: auto;
 }
 
+/*mobile app body*/
 .container {
     margin: 0 auto;
     width: 360px;
     height: 640px;
-    background-color: #F5F5F5;
+    background-color: #E0E0E0;
 }
+
+
 /*NavBar Content*/
+/*should nav be a div in which the content is contained (arrow and H1 text)?*/
 nav {
     padding: 5px;
     background-color: #E0E0E0;
@@ -24,17 +29,6 @@ nav {
     width: 360px;
 }
 
-.navbar {
-  background-image: url(images/BlackStatusBar.png);
-  background-position: center;
-  display: block;
-}
-
-.busmap {
-  background-image: url(images/BusMap2b.png);
-  background-position: center;
-  display: block;
-}
 
 div.arrow-left {
     color: black;
@@ -45,20 +39,262 @@ div.arrow-left {
     width: 0px;
 }
 
-h1 {
-  font-size: 20px;
-  margin: 0px;
-  padding: 5px;
-  text-align: center;
-
-
-
-
-}
-
-/*BusMap Image*/
-img.busmap {
+/*Images*/
+.navbar {
+  background-image: url(images/NavBar.png);
+  background-position: top;
   display: block;
 }
 
+/*should there be a div container in which the busmap is then placed inside?*/
+.busmap {
+  background-image: url(images/BusMap2b.png);
+  background-position: center;
+  display: block;
+}
+
+/*Nesting Code*/
+.busbar {
+    background-color: #E0E0E0;
+    color: #4A4A4A;
+    margin-bottom: 10px;
+    padding: 10px;
+    height: 20px;
+    width: 360px;
+}
+
 /*BusRoute List*/
+div#main {
+  background-color: #E0E0E0;
+  font-family: sans-serif;
+  font-size: 1em;
+  margin: 0 auto 0 auto;
+  width: 360px;
+  height: 375px;
+  overflow: scroll;
+}
+/*^how to get rid of bottom scroll. want right only*/
+
+div#main.hover {
+  background-color: #b3b3b3;
+  cursor: pointer;
+}
+/*^this doesn't work. how can I activate the hover feature?*/
+
+
+/*the totoal height for all buslists is 675. Change this in the container or add scroll to hide extra info? How to do this?*/
+
+.buslist1 {
+  background-color: white;
+  border-bottom: 1px solid #E0E0E0;
+  color: #4A4A4A;
+  font-size: .75em;
+  font-weight: 400;
+  padding: 5px;
+  height: 75px;
+  width: 350px;
+}
+
+.buslist2 {
+  background-color: white;
+  border-bottom: 1px solid #E0E0E0;
+  color: #4A4A4A;
+  font-size: .75em;
+  font-weight: 400;
+  padding: 5px;
+  height: 75px;
+  width: 350px;
+}
+
+.buslist3 {
+  background-color: white;
+  border-bottom: 1px solid #E0E0E0;
+  color: #4A4A4A;
+  font-size: .75em;
+  font-weight: 400;
+  padding: 5px;
+  height: 75px;
+  width: 350px;
+}
+
+.buslist4 {
+  background-color: white;
+  border-bottom: 1px solid #E0E0E0;
+  color: #4A4A4A;
+  font-size: .75em;
+  font-weight: 400;
+  padding: 5px;
+  height: 75px;
+  width: 350px;
+}
+
+.buslist5 {
+  background-color: white;
+  border-bottom: 1px solid #E0E0E0;
+  color: #4A4A4A;
+  font-size: .75em;
+  font-weight: 400;
+  padding: 5px;
+  height: 75px;
+  width: 350px;
+}
+
+.buslist6 {
+  background-color: white;
+  border-bottom: 1px solid #E0E0E0;
+  color: #4A4A4A;
+  font-size: .75em;
+  font-weight: 400;
+  padding: 5px;
+  height: 75px;
+  width: 350px;
+}
+
+.buslist7 {
+  background-color: white;
+  border-bottom: 1px solid #E0E0E0;
+  color: #4A4A4A;
+  font-size: .75em;
+  font-weight: 400;
+  padding: 5px;
+  height: 75px;
+  width: 350px;
+}
+
+.buslist8 {
+  background-color: white;
+  border-bottom: 1px solid #E0E0E0;
+  color: #4A4A4A;
+  font-size: .75em;
+  font-weight: 400;
+  padding: 5px;
+  height: 75px;
+  width: 350px;
+}
+
+.buslist9 {
+  background-color: white;
+  border-bottom: 1px solid #E0E0E0;
+  color: #4A4A4A;
+  font-size: .75em;
+  font-weight: 400;
+  padding: 5px;
+  height: 75px;
+  width: 350px;
+}
+
+
+/*buslist content*/
+/*NEED TO SPECIFY WIDTH % FOR EACH DIV AND USE NO WRAP DIV TO CONTROL LOCATION. DO THE SAME FOR DIV#MAIN?*/
+
+/*Content within each bus list*/
+div.busicon {
+  padding: 20px 0 0 10px;
+  margin: 0;
+  float: left;
+}
+
+div.busnumber {
+  padding: 18px 0 0 10px;
+  margin: 0;
+  float: left;
+  text-align: left;
+}
+
+div.destination {
+  padding: 11px 0 0 15px;
+  margin: 0;
+  float: left;
+  text-align: left;
+}
+
+div.arrivaltime {
+  padding: 11px 8px 0 0;
+  margin: 0;
+  float: right;
+  text-align: center;
+}
+
+div.arrivaltimeNA {
+  padding: 17px 8px 0 0;
+  margin: 0;
+  float: right;
+  text-align: center;
+}
+
+div.arrivalresumes {
+  padding: 10px 5px 0 0;
+  margin: 0;
+  float: right;
+  text-align: center;
+}
+
+div.arrow-right {
+    color: black;
+    margin: 0px;
+    padding: 14px 20px 0 0;
+    height: 0px;
+    width: 0px;
+    float: right;
+}
+
+
+/*Fonts*/
+/*Washintong and State*/
+h1 {
+  font-size: 1.4em;
+  margin: 0px;
+  padding: 5px;
+  text-align: center;
+  font-weight: 550;
+}
+
+/*arrivaltime - Bus Mins*/
+h2 {
+background-color: #FFFFFF;
+color: #4A4A4A;
+font-size: 1.2em;
+font-weight: 550;
+margin: 0px;
+padding: 5px;
+}
+
+/*Bus Number*/
+h3 {
+background-color: #FFFFFF;
+color: #4A4A4A;
+font-size: 1.2em;
+font-weight: 400;
+margin: auto;
+padding:5px;
+}
+
+
+/*Bus destination*/
+h4 {
+background-color: #FFFFFF;
+color: #4A4A4A;
+font-size: 1.1em;
+font-weight: 400;
+margin: 0px;
+padding: 5px;
+}
+
+/*busbar*/
+h5 {
+background-color: #E0E0E0;
+color: #4A4A4A;
+font-size: .90em;
+font-weight: 550;
+margin: 0px;
+padding-bottom: 5px;
+}
+
+
+h4 {
+  letter-spacing: .09em;
+}
+
+h4 {
+  line-height: 1.2em;
+}
