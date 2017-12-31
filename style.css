@@ -41,7 +41,7 @@ div.arrow-left {
 
 /*Images*/
 .navbar {
-  background-image: image(images/NavBar.png);
+  background-image: url(images/NavBar.png);
   background-position: top;
   display: block;
 }
