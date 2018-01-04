@@ -75,14 +75,6 @@ div#main {
   overflow-x: hidden;
 }
 
-/*don't need for hover. keep to isolate and align text in each buslist box?
-.businfo {
-  background-color: #E0E0E0;
-  height: 75px;
-  width: 350px;
-}
-*/
-
 .buslist:hover {
   background-color: #b3b3b3;
   cursor: pointer;
