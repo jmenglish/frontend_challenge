@@ -72,158 +72,83 @@ div#main {
   width: 360px;
   height: 375px;
   overflow: scroll;
+  overflow-x: hidden;
 }
-/*^how to get rid of bottom scroll. want right only*/
 
-div#main.hover {
+/*don't need for hover. keep to isolate and align text in each buslist box?
+.businfo {
+  background-color: #E0E0E0;
+  height: 75px;
+  width: 350px;
+}
+*/
+
+.buslist:hover {
   background-color: #b3b3b3;
   cursor: pointer;
 }
-/*^this doesn't work. how can I activate the hover feature?*/
 
-
-/*the totoal height for all buslists is 675. Change this in the container or add scroll to hide extra info? How to do this?*/
-
-.buslist1 {
+.buslist {
   background-color: white;
   border-bottom: 1px solid #E0E0E0;
-  color: #4A4A4A;
   font-size: .75em;
   font-weight: 400;
   padding: 5px;
   height: 75px;
   width: 350px;
 }
-
-.buslist2 {
-  background-color: white;
-  border-bottom: 1px solid #E0E0E0;
-  color: #4A4A4A;
-  font-size: .75em;
-  font-weight: 400;
-  padding: 5px;
-  height: 75px;
-  width: 350px;
-}
-
-.buslist3 {
-  background-color: white;
-  border-bottom: 1px solid #E0E0E0;
-  color: #4A4A4A;
-  font-size: .75em;
-  font-weight: 400;
-  padding: 5px;
-  height: 75px;
-  width: 350px;
-}
-
-.buslist4 {
-  background-color: white;
-  border-bottom: 1px solid #E0E0E0;
-  color: #4A4A4A;
-  font-size: .75em;
-  font-weight: 400;
-  padding: 5px;
-  height: 75px;
-  width: 350px;
-}
-
-.buslist5 {
-  background-color: white;
-  border-bottom: 1px solid #E0E0E0;
-  color: #4A4A4A;
-  font-size: .75em;
-  font-weight: 400;
-  padding: 5px;
-  height: 75px;
-  width: 350px;
-}
-
-.buslist6 {
-  background-color: white;
-  border-bottom: 1px solid #E0E0E0;
-  color: #4A4A4A;
-  font-size: .75em;
-  font-weight: 400;
-  padding: 5px;
-  height: 75px;
-  width: 350px;
-}
-
-.buslist7 {
-  background-color: white;
-  border-bottom: 1px solid #E0E0E0;
-  color: #4A4A4A;
-  font-size: .75em;
-  font-weight: 400;
-  padding: 5px;
-  height: 75px;
-  width: 350px;
-}
-
-.buslist8 {
-  background-color: white;
-  border-bottom: 1px solid #E0E0E0;
-  color: #4A4A4A;
-  font-size: .75em;
-  font-weight: 400;
-  padding: 5px;
-  height: 75px;
-  width: 350px;
-}
-
-.buslist9 {
-  background-color: white;
-  border-bottom: 1px solid #E0E0E0;
-  color: #4A4A4A;
-  font-size: .75em;
-  font-weight: 400;
-  padding: 5px;
-  height: 75px;
-  width: 350px;
-}
-
 
 /*buslist content*/
-/*NEED TO SPECIFY WIDTH % FOR EACH DIV AND USE NO WRAP DIV TO CONTROL LOCATION. DO THE SAME FOR DIV#MAIN?*/
-
-/*Content within each bus list*/
 div.busicon {
   padding: 20px 0 0 10px;
   margin: 0;
   float: left;
+  color: #4A4A4A;
 }
 
 div.busnumber {
-  padding: 18px 0 0 10px;
+  padding: 24px 0 0 10px;
+  margin: 0;
+  float: left;
+}
+
+div.destination1num {
+  padding: 15px 0 0 32px;
   margin: 0;
   float: left;
   text-align: left;
 }
 
-div.destination {
-  padding: 11px 0 0 15px;
+div.destination2nums {
+  padding: 15px 0 0 26px;
+  margin: 0;
+  float: left;
+  text-align: left;
+}
+
+div.destination3nums {
+  padding: 15px 0 0 20px;
   margin: 0;
   float: left;
   text-align: left;
 }
 
 div.arrivaltime {
-  padding: 11px 8px 0 0;
+  padding: 11px 15px 0 0;
   margin: 0;
   float: right;
   text-align: center;
 }
 
 div.arrivaltimeNA {
-  padding: 17px 8px 0 0;
+  padding: 22px 23px 0 0;
   margin: 0;
   float: right;
   text-align: center;
 }
 
 div.arrivalresumes {
-  padding: 10px 5px 0 0;
+  padding: 14px 15px 0 0;
   margin: 0;
   float: right;
   text-align: center;
@@ -251,42 +176,38 @@ h1 {
 
 /*arrivaltime - Bus Mins*/
 h2 {
-background-color: #FFFFFF;
 color: #4A4A4A;
 font-size: 1.2em;
 font-weight: 550;
 margin: 0px;
-padding: 5px;
+padding: 0;
 }
 
 /*Bus Number*/
 h3 {
-background-color: #FFFFFF;
 color: #4A4A4A;
 font-size: 1.2em;
 font-weight: 400;
 margin: auto;
-padding:5px;
+padding:0;
 }
 
 
 /*Bus destination*/
 h4 {
-background-color: #FFFFFF;
 color: #4A4A4A;
 font-size: 1.1em;
 font-weight: 400;
-margin: 0px;
-padding: 5px;
+margin: auto;
+padding: 0;
 }
 
 /*busbar*/
 h5 {
-background-color: #E0E0E0;
 color: #4A4A4A;
 font-size: .90em;
 font-weight: 550;
-margin: 0px;
+margin: auto;
 padding-bottom: 5px;
 }
 
