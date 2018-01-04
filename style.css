@@ -24,14 +24,14 @@ body {
 /*should nav be a div in which the content is contained (arrow and H1 text)?*/
 nav {
     padding: 5px;
-    background-color: #E0E0E0;
+    background-color: #efefef;
     height: 50px;
     width: 360px;
 }
 
 
 div.arrow-left {
-    color: black;
+    color: #3a3a3a;
     margin: 0px;
     padding-top: 5px;
     padding-left: 10px;
@@ -58,10 +58,10 @@ div.arrow-left {
 .busbar {
     background-color: #E0E0E0;
     color: #4A4A4A;
-    margin-bottom: 10px;
-    padding: 10px;
+    margin: 0 0 10px 5px;
+    padding: 8px;
     height: 20px;
-    width: 360px;
+    width: 350px;
 }
 
 /*BusRoute List*/
@@ -100,51 +100,67 @@ div.busicon {
 }
 
 div.busnumber {
-  padding: 24px 0 0 10px;
+  padding: 28px 0 0 10px;
   margin: 0;
   float: left;
 }
 
 div.destination1num {
-  padding: 15px 0 0 32px;
+  padding: 20px 0 0 32px;
   margin: 0;
   float: left;
   text-align: left;
 }
 
-div.destination2nums {
-  padding: 15px 0 0 26px;
+div.destination2numsA {
+  padding: 20px 0 0 26px;
   margin: 0;
   float: left;
   text-align: left;
 }
 
-div.destination3nums {
-  padding: 15px 0 0 20px;
+div.destination2numsB {
+  padding: 13px 0 0 26px;
   margin: 0;
   float: left;
   text-align: left;
 }
+
+
+div.destination3numsA {
+  padding: 20px 0 0 20px;
+  margin: 0;
+  float: left;
+  text-align: left;
+}
+
+div.destination3numsB{
+  padding: 12px 0 0 20px;
+  margin: 0;
+  float: left;
+  text-align: left;
+}
+
 
 div.arrivaltime {
-  padding: 11px 15px 0 0;
+  padding: 15px 45px 0 0;
   margin: 0;
   float: right;
-  text-align: center;
+  text-align: left;
 }
 
 div.arrivaltimeNA {
-  padding: 22px 23px 0 0;
+  padding: 22px 60px 0 0;
   margin: 0;
   float: right;
-  text-align: center;
+  text-align: left;
 }
 
 div.arrivalresumes {
-  padding: 14px 15px 0 0;
+  padding: 18px 20px 0 0;
   margin: 0;
   float: right;
-  text-align: center;
+  text-align: left;
 }
 
 div.arrow-right {
@@ -160,27 +176,28 @@ div.arrow-right {
 /*Fonts*/
 /*Washintong and State*/
 h1 {
-  font-size: 1.4em;
+  color: #3a3a3a;
+  font-size: 1.3em;
   margin: 0px;
   padding: 5px;
   text-align: center;
-  font-weight: 550;
+  font-weight: 700;
 }
 
 /*arrivaltime - Bus Mins*/
 h2 {
 color: #4A4A4A;
-font-size: 1.2em;
+font-size: 1.1em;
 font-weight: 550;
-margin: 0px;
+margin: auto;
 padding: 0;
 }
 
 /*Bus Number*/
 h3 {
 color: #4A4A4A;
-font-size: 1.2em;
-font-weight: 400;
+font-size: 1.1em;
+font-weight: 550;
 margin: auto;
 padding:0;
 }
@@ -205,10 +222,18 @@ padding-bottom: 5px;
 }
 
 
-h4 {
+h3 {
   letter-spacing: .09em;
 }
 
 h4 {
-  line-height: 1.2em;
+  letter-spacing: .09em;
+}
+
+h3 {
+  line-height: .4em;
+}
+
+h4 {
+  line-height: .4em;
 }
