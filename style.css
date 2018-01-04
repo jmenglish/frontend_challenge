@@ -46,6 +46,7 @@ div.arrow-left {
   display: block;
 }
 
+
 /*should there be a div container in which the busmap is then placed inside?*/
 .busmap {
   background-image: url(images/BusMap2b.png);
