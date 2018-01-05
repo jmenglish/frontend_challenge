@@ -157,7 +157,7 @@ div.arrivaltimeNA {
 }
 
 div.arrivalresumes {
-  padding: 18px 20px 0 0;
+  padding: 15px 20px 0 0;
   margin: 0;
   float: right;
   text-align: left;
@@ -166,7 +166,7 @@ div.arrivalresumes {
 div.arrow-right {
     color: black;
     margin: 0px;
-    padding: 14px 20px 0 0;
+    padding: 20px 25px 0 0;
     height: 0px;
     width: 0px;
     float: right;
@@ -221,6 +221,10 @@ margin: auto;
 padding-bottom: 5px;
 }
 
+/*spacing between letters*/
+h2 {
+  letter-spacing: .07em;
+}
 
 h3 {
   letter-spacing: .09em;
@@ -230,10 +234,24 @@ h4 {
   letter-spacing: .09em;
 }
 
+h5 {
+  letter-spacing: .08em;
+}
+
+
+/*spacing between words/sentences */
+h2 {
+  line-height: 1.2em;
+}
+
 h3 {
   line-height: .4em;
 }
 
 h4 {
   line-height: .4em;
+}
+
+.standout {
+  color: red;
 }
