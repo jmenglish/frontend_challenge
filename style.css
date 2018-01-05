@@ -41,7 +41,7 @@ div.arrow-left {
 
 /*Images*/
 .navbar {
-  background-image: url(images/NavBar.png);
+  background-image: url(Images/NavBar.png);
   background-position: top;
   display: block;
 }
@@ -49,7 +49,7 @@ div.arrow-left {
 
 /*should there be a div container in which the busmap is then placed inside?*/
 .busmap {
-  background-image: url(images/BusMap2b.png);
+  background-image: url(Images/BusMap2b.png);
   background-position: center;
   display: block;
 }
