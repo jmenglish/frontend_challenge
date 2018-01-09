@@ -1,0 +1,257 @@
+/*box-sizing to border-box change*/
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+/*website body*/
+body {
+    background-color: black;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: black;
+    width: auto;
+}
+
+/*mobile app body*/
+.container {
+    margin: 0 auto;
+    width: 360px;
+    height: 640px;
+    background-color: #E0E0E0;
+}
+
+
+/*NavBar Content*/
+/*should nav be a div in which the content is contained (arrow and H1 text)?*/
+nav {
+    padding: 5px;
+    background-color: #efefef;
+    height: 50px;
+    width: 360px;
+}
+
+
+div.arrow-left {
+    color: #3a3a3a;
+    margin: 0px;
+    padding-top: 5px;
+    padding-left: 10px;
+    height: 0px;
+    width: 0px;
+}
+
+/*Images*/
+.navbar {
+  background-image: url(Images/NavBar.png);
+  background-position: top;
+  display: block;
+}
+
+
+/*should there be a div container in which the busmap is then placed inside?*/
+.busmap {
+  background-image: url(Images/BusMap2b.png);
+  background-position: center;
+  display: block;
+}
+
+/*Nesting Code*/
+.busbar {
+    background-color: #E0E0E0;
+    color: #4A4A4A;
+    margin: 0 0 10px 5px;
+    padding: 8px;
+    height: 20px;
+    width: 350px;
+}
+
+/*BusRoute List*/
+div#main {
+  background-color: #E0E0E0;
+  font-family: sans-serif;
+  font-size: 1em;
+  margin: 0 auto 0 auto;
+  width: 360px;
+  height: 375px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.buslist:hover {
+  background-color: #b3b3b3;
+  cursor: pointer;
+}
+
+.buslist {
+  background-color: white;
+  border-bottom: 1px solid #E0E0E0;
+  font-size: .75em;
+  font-weight: 400;
+  padding: 5px;
+  height: 75px;
+  width: 350px;
+}
+
+/*buslist content*/
+div.busicon {
+  padding: 20px 0 0 10px;
+  margin: 0;
+  float: left;
+  color: #4A4A4A;
+}
+
+div.busnumber {
+  padding: 28px 0 0 10px;
+  margin: 0;
+  float: left;
+}
+
+div.destination1num {
+  padding: 20px 0 0 32px;
+  margin: 0;
+  float: left;
+  text-align: left;
+}
+
+div.destination2numsA {
+  padding: 20px 0 0 26px;
+  margin: 0;
+  float: left;
+  text-align: left;
+}
+
+div.destination2numsB {
+  padding: 13px 0 0 26px;
+  margin: 0;
+  float: left;
+  text-align: left;
+}
+
+
+div.destination3numsA {
+  padding: 20px 0 0 20px;
+  margin: 0;
+  float: left;
+  text-align: left;
+}
+
+div.destination3numsB{
+  padding: 12px 0 0 20px;
+  margin: 0;
+  float: left;
+  text-align: left;
+}
+
+
+div.arrivaltime {
+  padding: 15px 45px 0 0;
+  margin: 0;
+  float: right;
+  text-align: left;
+}
+
+div.arrivaltimeNA {
+  padding: 22px 60px 0 0;
+  margin: 0;
+  float: right;
+  text-align: left;
+}
+
+div.arrivalresumes {
+  padding: 15px 20px 0 0;
+  margin: 0;
+  float: right;
+  text-align: left;
+}
+
+div.arrow-right {
+    color: black;
+    margin: 0px;
+    padding: 20px 25px 0 0;
+    height: 0px;
+    width: 0px;
+    float: right;
+}
+
+
+/*Fonts*/
+/*Washintong and State*/
+h1 {
+  color: #3a3a3a;
+  font-size: 1.3em;
+  margin: 0px;
+  padding: 5px;
+  text-align: center;
+  font-weight: 700;
+}
+
+/*arrivaltime - Bus Mins*/
+h2 {
+color: #4A4A4A;
+font-size: 1.1em;
+font-weight: 550;
+margin: auto;
+padding: 0;
+}
+
+/*Bus Number*/
+h3 {
+color: #4A4A4A;
+font-size: 1.1em;
+font-weight: 550;
+margin: auto;
+padding:0;
+}
+
+
+/*Bus destination*/
+h4 {
+color: #4A4A4A;
+font-size: 1.1em;
+font-weight: 400;
+margin: auto;
+padding: 0;
+}
+
+/*busbar*/
+h5 {
+color: #4A4A4A;
+font-size: .90em;
+font-weight: 550;
+margin: auto;
+padding-bottom: 5px;
+}
+
+/*spacing between letters*/
+h2 {
+  letter-spacing: .07em;
+}
+
+h3 {
+  letter-spacing: .09em;
+}
+
+h4 {
+  letter-spacing: .09em;
+}
+
+h5 {
+  letter-spacing: .08em;
+}
+
+
+/*spacing between words/sentences */
+h2 {
+  line-height: 1.2em;
+}
+
+h3 {
+  line-height: .4em;
+}
+
+h4 {
+  line-height: .4em;
+}
+
+.standout {
+  color: red;
+}
